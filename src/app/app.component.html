@@ -1,0 +1,12 @@
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand">Navbar</a>
+    <form class="d-flex" role="search">
+      <button class="nav-link" routerLink="/cart" class="btn btn-outline-success" type="button">Cart : {{(products$|async)?.length}}</button>
+      
+    </form>
+  </div>
+</nav>
+<!-- <app-counter></app-counter> -->
+<!-- <app-product /> -->
+<router-outlet />
